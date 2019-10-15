@@ -1,0 +1,100 @@
+% No modificar estas líneas de código, por favor dirigirse a INTRODUCCIÓN 
+\newpage
+\phantomsection\addcontentsline{toc}{section}{INTRODUCCIÓN} 
+
+%------------------------
+%
+%       INTRODUCCIÓN
+%
+%------------------------
+
+\section*{INTRODUCCIÓN}
+
+La tendencia hacia sistemas autónomos de defensa en la sociedad se ha debido al énfasis en la pronta intervención a cualquier echo delictivo para reducir las víctimas humanas durante dichos conflictos. Sin embargo en la actualidad los sistemas de seguridad son mayormente utilizados en empresas y bancos, esto causa que existan mucho barrios con poca seguridad, en especial en zonas de bajos recursos. 
+
+La motivación del proyecto es esforzarse por un sistema autónomo que pueda detectar un objetivo en movimiento y tenga la capacidad de neutralizarlo. La parte a estudiar en este proyecto sera la detección de objetivos en movimientos, es decir, que el centinela sera capaz de detectar y localizar intrusos con eficacia. Para esto el diseño de la torreta autónoma permitirá neutralizar a cualquier objetivo dentro del campo de visión mediante la utilización de visión artificial.
+
+"Los humanos utilizan sus ojos y cerebros para ver y sentir el mundo que los rodea. La visión artificial es la ciencia dedicada a proveer una habilidad similar, o incluso mejor a las maquinas y computadoras ".\cite{barrero2015algoritmo}
+"La visión artificial se preocupa con la extracción automática, análisis y entendimiento de información útil presentada en una imagen o secuencia de imágenes. Esto involucra el desarrollo de una base teórica y algorítmica para lograr un entendimiento visual."\cite{BMVA:Online}
+
+Las cámaras son uno de los sensores más utilizados ya que estos poseen diversas aplicaciones, es decir, que le podemos dar diversos usos\cite{sankaranarayanan2008object}. Es por esto que su utilización al momento de diseñar un centinela que detecte un objetivo en un rango de visión dado es visto como una necesidad. 
+
+Existen diversas formas de crear piezas móviles, sin embargo dadas nuestras condiciones actuales se intentara utilizar materiales que se encuentren en nuestra posesión o que sean fáciles de conseguir para el armazón de la torreta.
+
+\textit{"The turret that is included in the system will be a paintball or airsoft gun that will simulate the real effect of being hit by a military defense turret. (...) Two servo motors will control the pan and tilt of the turret and the third will directly control the firing of the system by controlling when the trigger is pulled."} \cite{AutonomousTurret} Como se puede ver ya existe proyectos en los cuales la accesibilidad ha sido considerada y es por esto que se utilizaran dichos artículos o proyectos para basar los materiales necesarios. Igualmente dado que la visión es el enfoque principal de nuestro proyecto se intentara mantener los costos del armazón en un mínimo. 
+
+Para poder realizar el proyecto eficientemente sera necesario seleccionar aquellos documentos que realmente proporcionen información necesaria y útil, para lo que se realizara por medio de una revisión sistemática de la literatura. Para esto primero sera necesario establecer los objetivos a que intentaremos alanzar. Después se realizara la revisión sistemática en si y se agruparan aquellos documentos que se presenten información relevante al tema. Finalmente se utilizarán los documentos elegidos y se usaran como aportes y sustentos para la elaboración de la torreta.
+
+\subsection*{Antecedentes}
+
+Hay muchas formas de detectar movimiento, pero particularmente en robótica, los enfoques más generales utilizan el procesamiento de imágenes o seguimiento de detección de luz y rango.
+Estos dos métodos requieren básicamente un procesamiento extenso sensores de potencia o costosos. Muchas soluciones de grado militar están disponibles para esto problema pero generalmente son soluciones muy caras y una solución de bajo precio para este problema lo hace más potente. Ahora los militares están ganando mucha práctica experiencia y trabajo para la interacción de humanos y robots La robótica es una rama tecnológica en evolución que se ocupa del diseño, construcción, operación y aplicación de robots y sistemas informáticos para su control, retroalimentación sensorial y procesamiento de información. Mejora la seguridad, reduce las causas innecesarias y Reduce el costo operativo.
+
+\subsection*{Identificación del problema}
+Una gran problemática en nuestro medio es la inseguridad ciudadana y esto empieza desde el hogar y termina en la autoridades competentes, la implementación de nuevos sistemas de seguridad en los recintos penitenciarios es muy importante para dejar de lado el elemento humano al momento de tomar decisiones que tienen que ser frías y no evaluadas por un ser con sentimientos.
+
+\subsection*{Formulación del problema}
+
+podremos implementar un sistema de reconocimiento de objetivo a través de  la plataforma raspberry, con el apoyo de Open cv aplicado el el software stretch?
+
+\subsection*{Objetivos}
+
+desarrollar un prototipo de seguimiento de objetivo con la implementación de la plataforma raspberry y la pi cámara con ayuda de Open CV para la detección de objetivos en movimiento.
+
+\subsubsection*{Objetivo general}
+
+Implementar el prototipo con éxito.
+
+\subsubsection*{Objetivos específicos}
+
+se realizaran las siguientes tareas:
+\begin{itemize}
+\item instalar con éxito open CV en una plataforma pi zero, de no conseguirlo usar las plataformas pi 3 o superiores .
+\item construir una estructura acorde con el movimiento generado de búsqueda.
+\item aplicar los conocimientos de la materia de diseño servomecanico. 
+\end{itemize}
+
+
+\subsection*{Hipótesis}
+
+El hecho de tener una gran cantidad de plataformas de procesamiento de señal nos deja la duda, de cual es mas óptima sin necesidad de gastar innecesariamente en una plataforma costosa, además de usar los motores adecuados al momento de generar los controles básicos 
+
+
+\subsection*{Justificación}
+
+el tema fue elegido gracias a la tendencia de que la inseguridad cada ves es mas notoria y la robótica pude ser una gran solución al momento de tomar decisiones frías y que protejan el interés de la ciudadanía dejando de lado la leyes de la ROBÓTICA e infundiendo castigo severo a reos que incumplan con normas de seguridad de prisiones en la ciudad de Cochabamba. 
+
+\subsection*{Materiales}
+Ya que este es un prototipo, se emplearan los siguientes materiales económicos:
+\begin{itemize}
+\item Raspberry pi zero ó raspberry pi 3b+
+\item pi camera ó web cam.
+\item 2 stepper nema 17.
+\item marcadora de paintball ó replica de airsoft.
+\item Single Relay.
+\item Step Up Converter.
+\item Adafruit TB6612 Motion Motor Control Shield Board.
+\item estructura para marcadora ó replica.
+
+\end{itemize}
+
+
+\subsection*{Cronograma}
+el siguiente cronograma (tabla 1) se aplicara desde la segunda semana de octubre y son operaciones generales.
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\# & objetivo & \multicolumn{4}{l|}{octubre} & \multicolumn{4}{l|}{noviembre} \\ \hline
+1 & instalacion de software &  & \cellcolor[HTML]{34FF34} & \cellcolor[HTML]{34FF34} &  &  &  &  &  \\ \hline
+2 & armado de estructura &  &  & \cellcolor[HTML]{34FF34} & \cellcolor[HTML]{34FF34} & \cellcolor[HTML]{34FF34} &  &  &  \\ \hline
+3 & implementacion de drivers &  &  & \cellcolor[HTML]{34FF34} & \cellcolor[HTML]{34FF34} & \cellcolor[HTML]{34FF34} &  &  &  \\ \hline
+4 & ultimar detalles &  &  &  &  &  & \cellcolor[HTML]{34FF34} &  &  \\ \hline
+5 & presentar &  &  &  &  &  &  & \cellcolor[HTML]{34FF34} & \cellcolor[HTML]{34FF34} \\ \hline
+\end{tabular}
+\caption{}
+\label{tab:my-table}
+\end{table}
